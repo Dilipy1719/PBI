@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "sample r excel visual"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "d0ee3826-8537-ad48-418a-9996a28912fb"
+  }
+}
