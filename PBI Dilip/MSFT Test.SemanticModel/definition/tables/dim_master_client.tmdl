@@ -1,0 +1,241 @@
+table dim_master_client
+	lineageTag: 698b70ea-7912-42ea-bdc8-855c12b36440
+
+	column master_client_key
+		dataType: int64
+		formatString: 0
+		lineageTag: 0334f07f-fd12-446b-afae-e5eadaf3f089
+		summarizeBy: none
+		sourceColumn: master_client_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column master_client_id
+		dataType: string
+		lineageTag: 656a23f4-081c-420b-81e3-2fda23614953
+		summarizeBy: none
+		sourceColumn: master_client_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column legacy_master_client_id
+		dataType: string
+		lineageTag: 3837be4e-1189-447d-b7c2-ba4acff2d53e
+		summarizeBy: none
+		sourceColumn: legacy_master_client_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column master_client_nam
+		dataType: string
+		lineageTag: 6efff3ca-95ed-4dc5-ab1f-52de6872b353
+		summarizeBy: none
+		sourceColumn: master_client_nam
+
+		annotation SummarizationSetBy = Automatic
+
+	column master_client_dist_cd
+		dataType: string
+		lineageTag: 23c3205a-0a9a-49a5-8488-588a2e211c7d
+		summarizeBy: none
+		sourceColumn: master_client_dist_cd
+
+		annotation SummarizationSetBy = Automatic
+
+	column master_client_sales_offc_cd
+		dataType: string
+		lineageTag: 8821a147-9ee2-492f-a898-c5068bef9cfe
+		summarizeBy: none
+		sourceColumn: master_client_sales_offc_cd
+
+		annotation SummarizationSetBy = Automatic
+
+	column master_client_sales_grp_cd
+		dataType: string
+		lineageTag: 90da9fe7-2bea-45ec-922d-acb1d65d76e6
+		summarizeBy: none
+		sourceColumn: master_client_sales_grp_cd
+
+		annotation SummarizationSetBy = Automatic
+
+	column master_client_dist_desc
+		dataType: string
+		lineageTag: 1d648b88-22ea-4ccb-bb24-fd9656aa842d
+		summarizeBy: none
+		sourceColumn: master_client_dist_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column master_client_sales_offc_desc
+		dataType: string
+		lineageTag: 4afe6707-043a-41b6-a8ca-9cf2df88d236
+		summarizeBy: none
+		sourceColumn: master_client_sales_offc_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column master_client_sales_grp_desc
+		dataType: string
+		lineageTag: 12f4a9c2-58f3-4f0c-93a4-83fe8a376719
+		summarizeBy: none
+		sourceColumn: master_client_sales_grp_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column master_client_indus_sec_cd
+		dataType: string
+		lineageTag: 296f6004-527a-4cc6-aa44-b64952dd101c
+		summarizeBy: none
+		sourceColumn: master_client_indus_sec_cd
+
+		annotation SummarizationSetBy = Automatic
+
+	column master_client_indus_sec_desc
+		dataType: string
+		lineageTag: 5ac5ae71-fa6b-4b82-9acc-73c9b338463e
+		summarizeBy: none
+		sourceColumn: master_client_indus_sec_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column master_client_bp_grp_cd
+		dataType: string
+		lineageTag: fcfd636d-a28f-4120-b53c-608ee082316b
+		summarizeBy: none
+		sourceColumn: master_client_bp_grp_cd
+
+		annotation SummarizationSetBy = Automatic
+
+	column master_client_bp_id_array
+		dataType: string
+		lineageTag: 0094ae78-8885-452b-9d5d-0bb905d3a8e1
+		summarizeBy: none
+		sourceColumn: master_client_bp_id_array
+
+		annotation SummarizationSetBy = Automatic
+
+	column master_client_primary_telephone
+		dataType: string
+		lineageTag: 089356ad-86c3-49a8-a535-674098ff80af
+		summarizeBy: none
+		sourceColumn: master_client_primary_telephone
+
+		annotation SummarizationSetBy = Automatic
+
+	column master_client_secondary_telephone
+		dataType: string
+		lineageTag: 4ddd37ec-39f1-4b70-bae5-8fba7e14c8e2
+		summarizeBy: none
+		sourceColumn: master_client_secondary_telephone
+
+		annotation SummarizationSetBy = Automatic
+
+	column master_client_email_addr
+		dataType: string
+		lineageTag: affde7ab-3de6-49d0-9312-c2632b6a1b16
+		summarizeBy: none
+		sourceColumn: master_client_email_addr
+
+		annotation SummarizationSetBy = Automatic
+
+	column record_strt_dat
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: d60c24d0-08b6-4c6d-944e-7f0d5b2208ba
+		summarizeBy: none
+		sourceColumn: record_strt_dat
+
+		variation Variation
+			isDefault
+			relationship: 3c4e54f1-0893-4b0d-96a4-e5395fe9306a
+			defaultHierarchy: LocalDateTable_e5b6fe48-54c1-4693-be77-e865d8733c34.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column record_end_dat
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 1ec354f1-5aa7-4173-b391-92d6f8fa5673
+		summarizeBy: none
+		sourceColumn: record_end_dat
+
+		variation Variation
+			isDefault
+			relationship: f77e9914-0f23-4361-b6fe-3faded86e4f5
+			defaultHierarchy: LocalDateTable_8d5454f1-cb1b-4d39-981a-41dc9dc3c442.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column active_record_ind
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: cd2511ce-156b-467a-8de8-ec203a07c5d1
+		summarizeBy: none
+		sourceColumn: active_record_ind
+
+		annotation SummarizationSetBy = Automatic
+
+	column validated
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: b2e6fba5-dbc8-448e-ab2a-f6cfb701f033
+		summarizeBy: none
+		sourceColumn: validated
+
+		annotation SummarizationSetBy = Automatic
+
+	column created_timestamp
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 53414d22-293f-4217-89fb-3a4d24fd1a8d
+		summarizeBy: none
+		sourceColumn: created_timestamp
+
+		variation Variation
+			isDefault
+			relationship: 9e388ca1-931b-4d58-8ad0-954816d87c3f
+			defaultHierarchy: LocalDateTable_b6444cdf-6f2b-4225-b3cc-4eda089833d3.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column updated_timestamp
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: fba98f85-9e68-4d4f-a149-ff2b1618235f
+		summarizeBy: none
+		sourceColumn: updated_timestamp
+
+		variation Variation
+			isDefault
+			relationship: dfce14b4-4256-467f-a3e4-db57b203f5cc
+			defaultHierarchy: LocalDateTable_5d6ec47a-e961-45ef-83bb-5c1471fa2854.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column load_key
+		dataType: string
+		lineageTag: 6194761f-7174-411f-9ee2-fef7f824e254
+		summarizeBy: none
+		sourceColumn: load_key
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_master_client = m
+		mode: import
+		source =
+				let
+				    Source = AmazonRedshift.Database(Server, Database),
+				    reporting = Source{[Name="reporting"]}[Data],
+				    dim_master_client1 = reporting{[Name="dim_master_client"]}[Data],
+				  #"Kept First Rows" = Table.FirstN(dim_master_client1,100)
+				in
+				    #"Kept First Rows"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Exception
+

@@ -1,0 +1,42 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.61\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "d7034725849d73557d67",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"a6b39ac05a6fad732a9a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":457.14285714285717,\"y\":141.03343465045594,\"z\":0,\"width\":280.1215805471125,\"height\":280.1215805471125,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Reseller (2).ResellerCode\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"Reseller (2)\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"ResellerCode\"},\"Name\":\"Reseller (2).ResellerCode\",\"NativeReferenceName\":\"ResellerCode\"}]},\"autoSelectVisualType\":false,\"drillFilterOtherVisuals\":true,\"filterSortOrder\":3}}",
+          "filters": "[]",
+          "height": 280.12,
+          "width": 280.12,
+          "x": 457.14,
+          "y": 141.03,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

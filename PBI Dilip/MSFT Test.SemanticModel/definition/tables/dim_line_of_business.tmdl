@@ -1,0 +1,88 @@
+table dim_line_of_business
+	lineageTag: f11ba4f0-2afb-485c-8d4d-c1679a416a03
+
+	column line_of_bus_key
+		dataType: int64
+		formatString: 0
+		lineageTag: bc2a4367-7d35-4cd7-86f2-51f6fc1d58c6
+		summarizeBy: none
+		sourceColumn: line_of_bus_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column line_of_bus_cd
+		dataType: string
+		lineageTag: 73a0dd6c-5e75-49df-b68e-b05a9e295e5f
+		summarizeBy: none
+		sourceColumn: line_of_bus_cd
+
+		annotation SummarizationSetBy = Automatic
+
+	column line_of_bus_desc
+		dataType: string
+		lineageTag: 90b01919-d5d5-4b84-9888-ca4b5eabd5a5
+		summarizeBy: none
+		sourceColumn: line_of_bus_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column validated
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: b04793d8-2290-4187-828c-88ca0f0c9c04
+		summarizeBy: none
+		sourceColumn: validated
+
+		annotation SummarizationSetBy = Automatic
+
+	column created_timestamp
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 3aae4de2-86f0-4a43-b612-04565f673413
+		summarizeBy: none
+		sourceColumn: created_timestamp
+
+		variation Variation
+			isDefault
+			relationship: c020f78c-42f2-4160-94fe-6057300ace92
+			defaultHierarchy: LocalDateTable_1fa57d5c-cc26-42a2-99e2-5951c7b4e4f3.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column updated_timestamp
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 77f8e7b9-c021-4d42-b3d0-a72c9627bf21
+		summarizeBy: none
+		sourceColumn: updated_timestamp
+
+		variation Variation
+			isDefault
+			relationship: feb59775-d1fa-4b1e-b39c-959382d80e42
+			defaultHierarchy: LocalDateTable_f6cff83c-204a-430d-82be-a5b8c91be53e.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column load_key
+		dataType: string
+		lineageTag: 82203ee1-96ff-4b48-9beb-a020a5672d8b
+		summarizeBy: none
+		sourceColumn: load_key
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_line_of_business = m
+		mode: import
+		source =
+				let
+				    Source = AmazonRedshift.Database(Server, Database),
+				    reporting = Source{[Name="reporting"]}[Data],
+				    dim_line_of_business1 = reporting{[Name="dim_line_of_business"]}[Data],
+				    #"Kept First Rows" = Table.FirstN(dim_line_of_business1,100)
+				in
+				    #"Kept First Rows"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Exception
+

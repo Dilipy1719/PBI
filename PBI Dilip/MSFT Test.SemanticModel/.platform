@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "MSFT Test"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a5585516-acd2-bf14-461f-1b9e3e86b34e"
+  }
+}

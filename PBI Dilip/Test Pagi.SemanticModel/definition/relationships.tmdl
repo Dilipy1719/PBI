@@ -1,0 +1,6 @@
+relationship AutoDetected_3cdfcd63-99dc-411e-a648-fb293070ba66
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'Sales (2)'.ResellerCode
+	toColumn: 'Reseller (2)'.ResellerCode
+

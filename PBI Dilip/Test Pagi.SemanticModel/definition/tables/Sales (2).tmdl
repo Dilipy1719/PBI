@@ -1,0 +1,62 @@
+table 'Sales (2)'
+	lineageTag: aff539a2-df70-4fe3-968d-fc8e2b1b6aa8
+
+	column SalesID
+		dataType: int64
+		formatString: 0
+		lineageTag: 695043db-ee64-4d4c-ae26-9bd1c007aea9
+		summarizeBy: count
+		sourceColumn: SalesID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ResellerCode
+		dataType: int64
+		formatString: 0
+		lineageTag: 35fd48b8-9a02-4650-bdec-866eb9e709ad
+		summarizeBy: none
+		sourceColumn: ResellerCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column Product
+		dataType: string
+		lineageTag: cb2a5c83-92e0-43f3-9238-d26e35191d84
+		summarizeBy: none
+		sourceColumn: Product
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quantity
+		dataType: int64
+		formatString: 0
+		lineageTag: e67bcb81-52f6-4995-9ecf-49e8069431b5
+		summarizeBy: sum
+		sourceColumn: Quantity
+
+		annotation SummarizationSetBy = Automatic
+
+	column Price
+		dataType: int64
+		formatString: 0
+		lineageTag: 80f6d57e-a35d-4516-bbd1-0ca777d0247c
+		summarizeBy: sum
+		sourceColumn: Price
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Sales (2)' = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\dilip\Downloads\resellers_and_sales.xlsx"), null, true),
+				    Sales_Sheet = Source{[Item="Sales",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Sales_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"SalesID", Int64.Type}, {"ResellerCode", Int64.Type}, {"Product", type text}, {"Quantity", Int64.Type}, {"Price", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

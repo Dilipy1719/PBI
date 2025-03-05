@@ -1,0 +1,68 @@
+table 'Reseller (2)'
+	lineageTag: 36d4f788-751c-43c8-b18f-618abb7caeb3
+
+	column ResellerCode
+		dataType: int64
+		formatString: 0
+		lineageTag: 8efe9fa2-bd99-4720-83be-7f810222b265
+		summarizeBy: none
+		sourceColumn: ResellerCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column ResellerName
+		dataType: string
+		lineageTag: 99db62e7-41aa-41ee-9e7f-555cb2489e0f
+		summarizeBy: none
+		sourceColumn: ResellerName
+
+		annotation SummarizationSetBy = Automatic
+
+	column CountryRegion
+		dataType: string
+		lineageTag: f81d6280-3139-4ddf-b514-dfc601c34c81
+		summarizeBy: none
+		sourceColumn: CountryRegion
+
+		annotation SummarizationSetBy = Automatic
+
+	column StateProvince
+		dataType: string
+		lineageTag: f6a4601a-1dfb-4a61-9b08-5adee9600ab0
+		summarizeBy: none
+		sourceColumn: StateProvince
+
+		annotation SummarizationSetBy = Automatic
+
+	column City
+		dataType: string
+		lineageTag: fc94d677-cdb8-4339-a5d2-0105fe230e07
+		summarizeBy: none
+		sourceColumn: City
+
+		annotation SummarizationSetBy = Automatic
+
+	column PostalCode
+		dataType: int64
+		formatString: 0
+		lineageTag: 83147aaa-5829-4378-81ea-eea97f00febe
+		summarizeBy: count
+		sourceColumn: PostalCode
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Reseller (2)' = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\dilip\Downloads\resellers_and_sales.xlsx"), null, true),
+				    Reseller_Sheet = Source{[Item="Reseller",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Reseller_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"ResellerCode", Int64.Type}, {"ResellerName", type text}, {"CountryRegion", type text}, {"StateProvince", type text}, {"City", type text}, {"PostalCode", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,241 @@
+table dim_profit_center
+	lineageTag: 9db737de-da74-4764-9934-5820cc225cf3
+
+	column profit_cntr_key
+		dataType: int64
+		formatString: 0
+		lineageTag: 62a50013-729f-4b66-a98b-4741cb811f51
+		summarizeBy: none
+		sourceColumn: profit_cntr_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column profit_cntr_num
+		dataType: string
+		lineageTag: c6ec390b-7fd4-48b3-ba28-3d23ae79765f
+		summarizeBy: none
+		sourceColumn: profit_cntr_num
+
+		annotation SummarizationSetBy = Automatic
+
+	column controlling_area_cd
+		dataType: string
+		lineageTag: cd723759-77c9-40fe-9dcf-1f7d76e97929
+		summarizeBy: none
+		sourceColumn: controlling_area_cd
+
+		annotation SummarizationSetBy = Automatic
+
+	column profit_cntr_nam
+		dataType: string
+		lineageTag: a83fe7c7-9456-4911-81a6-33407f20afb7
+		summarizeBy: none
+		sourceColumn: profit_cntr_nam
+
+		annotation SummarizationSetBy = Automatic
+
+	column profit_cntr_hrchy_cd
+		dataType: string
+		lineageTag: 061a5504-183b-42fa-93e4-0c2293618af8
+		summarizeBy: none
+		sourceColumn: profit_cntr_hrchy_cd
+
+		annotation SummarizationSetBy = Automatic
+
+	column profit_cntr_hrchy_nam
+		dataType: string
+		lineageTag: 2d324bef-dcf4-4b83-9260-0ac8776d3b49
+		summarizeBy: none
+		sourceColumn: profit_cntr_hrchy_nam
+
+		annotation SummarizationSetBy = Automatic
+
+	column curr_cd
+		dataType: string
+		lineageTag: 8c777843-5401-4aa8-8c2b-c8f78e49c134
+		summarizeBy: none
+		sourceColumn: curr_cd
+
+		annotation SummarizationSetBy = Automatic
+
+	column iso_curr_cd
+		dataType: string
+		lineageTag: ecae44e9-d547-48fd-a334-447bbf16871d
+		summarizeBy: none
+		sourceColumn: iso_curr_cd
+
+		annotation SummarizationSetBy = Automatic
+
+	column curr_nam
+		dataType: string
+		lineageTag: f1eee8f7-bfab-47b3-89e4-0ac8066235b9
+		summarizeBy: none
+		sourceColumn: curr_nam
+
+		annotation SummarizationSetBy = Automatic
+
+	column tax_jur_cd
+		dataType: string
+		lineageTag: 60f86853-8f91-4a1b-9cf2-1b040e586517
+		summarizeBy: none
+		sourceColumn: tax_jur_cd
+
+		annotation SummarizationSetBy = Automatic
+
+	column country_cd
+		dataType: string
+		lineageTag: 136fadb3-9c45-487f-ae46-19360ef7c005
+		summarizeBy: none
+		sourceColumn: country_cd
+
+		annotation SummarizationSetBy = Automatic
+
+	column country_nam
+		dataType: string
+		lineageTag: f41fb494-d5a1-4651-8ec2-78f53a3d8d24
+		summarizeBy: none
+		sourceColumn: country_nam
+
+		annotation SummarizationSetBy = Automatic
+
+	column city_cd
+		dataType: string
+		lineageTag: e7784352-83a9-4100-b19a-34d63ddec652
+		summarizeBy: none
+		sourceColumn: city_cd
+
+		annotation SummarizationSetBy = Automatic
+
+	column city_nam
+		dataType: string
+		lineageTag: 8c27cbce-2c76-405f-b396-ebf084ca21b5
+		summarizeBy: none
+		sourceColumn: city_nam
+
+		annotation SummarizationSetBy = Automatic
+
+	column region_cd
+		dataType: string
+		lineageTag: e8521c48-9f53-4ca9-987e-6b84bec5e9e4
+		summarizeBy: none
+		sourceColumn: region_cd
+
+		annotation SummarizationSetBy = Automatic
+
+	column profit_cntr_short_txt
+		dataType: string
+		lineageTag: 6142ea24-bc68-4af9-ac5a-0b1baf38fe10
+		summarizeBy: none
+		sourceColumn: profit_cntr_short_txt
+
+		annotation SummarizationSetBy = Automatic
+
+	column profit_cntr_long_txt
+		dataType: string
+		lineageTag: 45995415-21db-4a01-b14c-97b9db2b285d
+		summarizeBy: none
+		sourceColumn: profit_cntr_long_txt
+
+		annotation SummarizationSetBy = Automatic
+
+	column record_strt_dat
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 0a04d575-cd0b-4fdf-af4f-b88b08ececad
+		summarizeBy: none
+		sourceColumn: record_strt_dat
+
+		variation Variation
+			isDefault
+			relationship: bbdceef7-e13c-44a3-bda2-fccd8375f5ae
+			defaultHierarchy: LocalDateTable_c9583c96-dea5-4c5e-aca4-10d66c0aab23.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column record_end_dat
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: f5445a2e-9366-4ebe-a04a-005955e3d308
+		summarizeBy: none
+		sourceColumn: record_end_dat
+
+		variation Variation
+			isDefault
+			relationship: a454ba27-7aed-4c4a-a58c-066469733ea5
+			defaultHierarchy: LocalDateTable_a1da6ab7-94a0-4f3f-a828-64f5569de3a4.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column active_record_ind
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 5c319583-01a1-42b3-b74d-567c8a7deb2e
+		summarizeBy: none
+		sourceColumn: active_record_ind
+
+		annotation SummarizationSetBy = Automatic
+
+	column validated
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 33250525-ba5d-42fa-8a43-c778f845408b
+		summarizeBy: none
+		sourceColumn: validated
+
+		annotation SummarizationSetBy = Automatic
+
+	column created_timestamp
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 6d22cdeb-d176-45f7-b59e-b272fc0a1824
+		summarizeBy: none
+		sourceColumn: created_timestamp
+
+		variation Variation
+			isDefault
+			relationship: a601857b-69a7-49c2-a744-361a689b9c9a
+			defaultHierarchy: LocalDateTable_1a75685f-5dc1-455f-ba06-d98b34ccb276.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column updated_timestamp
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 23d0ce92-4084-4828-9427-11c1691a9889
+		summarizeBy: none
+		sourceColumn: updated_timestamp
+
+		variation Variation
+			isDefault
+			relationship: c1604840-2c2d-4085-b55a-06d4d1f08c2d
+			defaultHierarchy: LocalDateTable_0f10f968-d929-4b0b-ae78-e2defbb08c7b.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column load_key
+		dataType: string
+		lineageTag: 91e081ef-3fc3-49b2-82f1-4197eb0ad366
+		summarizeBy: none
+		sourceColumn: load_key
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_profit_center = m
+		mode: import
+		source =
+				let
+				    Source = AmazonRedshift.Database(Server, Database),
+				    reporting = Source{[Name="reporting"]}[Data],
+				    dim_profit_center1 = reporting{[Name="dim_profit_center"]}[Data],
+				    #"Kept First Rows" = Table.FirstN(dim_profit_center1,100)
+				in
+				    #"Kept First Rows"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

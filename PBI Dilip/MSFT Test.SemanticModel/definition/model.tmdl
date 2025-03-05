@@ -1,0 +1,71 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["dim_client","dim_date","dim_line_of_business","dim_master_client","dim_profit_center","dim_provider_contract","fact_shipment_pin","Server","Database"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.139.1678.0 (24.12)+2a034ab280bddf891eb7bb9ebfe6996f9c3a3196
+
+annotation PBI_ProTooling = ["DaxQueryView_Desktop"]
+
+ref table dim_client
+ref table DateTableTemplate_f028d0a7-4d40-4719-8aa2-a78cef64adc9
+ref table LocalDateTable_b91cc4bf-b067-4e54-b912-adccc1047250
+ref table LocalDateTable_2d0e371f-2e87-489f-a6f0-e6e3f7e6214c
+ref table LocalDateTable_b7c5ebc9-b5c8-47a5-aa7e-33ee62e08c6b
+ref table LocalDateTable_ff63dfa6-a24d-4cc0-b180-1d0729d26834
+ref table dim_date
+ref table LocalDateTable_91143ebc-44bf-484b-b458-f4fe46248de2
+ref table LocalDateTable_57409097-13cd-4f22-8d67-205926785a6c
+ref table LocalDateTable_99957c79-57e8-4bd3-abdd-32f4e61a72d9
+ref table LocalDateTable_8990bd39-0d7d-47b5-892e-a2aefb941fc8
+ref table LocalDateTable_308a894d-b554-46aa-8149-2b880d55ec3d
+ref table LocalDateTable_54d1a30f-4539-4087-a221-e871fff65cf8
+ref table LocalDateTable_9d1afa70-be6e-4244-88e1-7196af75cc80
+ref table LocalDateTable_344358ef-73d3-4629-a85c-ea580cc140f7
+ref table LocalDateTable_e4dccb2d-0eca-4f80-ac80-676e7d0489b5
+ref table LocalDateTable_8cf6395c-1d5c-4b9c-a255-fd02c434c1c1
+ref table LocalDateTable_fffd2401-7626-47a0-9618-9f3308643062
+ref table LocalDateTable_96348bdb-c1d3-4629-a1ea-3bbd07d9edb8
+ref table LocalDateTable_83dbe08a-5f43-4044-a742-4f57c3a919cf
+ref table LocalDateTable_c9ea85bf-3222-4fe1-b1d4-ce4b20ac90f7
+ref table LocalDateTable_fe64c11d-093a-4deb-8a85-a4a713ddfc5f
+ref table LocalDateTable_128b42f4-dad4-4e9f-8d90-c447937244c6
+ref table LocalDateTable_81971cb0-6a7d-4ac1-82e3-99016438d88c
+ref table LocalDateTable_73462196-7980-4f34-98ba-4b3c7ebeddf8
+ref table LocalDateTable_b5354ece-19ca-444c-856d-13d8e99c02f7
+ref table dim_line_of_business
+ref table LocalDateTable_1fa57d5c-cc26-42a2-99e2-5951c7b4e4f3
+ref table LocalDateTable_f6cff83c-204a-430d-82be-a5b8c91be53e
+ref table dim_master_client
+ref table LocalDateTable_e5b6fe48-54c1-4693-be77-e865d8733c34
+ref table LocalDateTable_8d5454f1-cb1b-4d39-981a-41dc9dc3c442
+ref table LocalDateTable_b6444cdf-6f2b-4225-b3cc-4eda089833d3
+ref table LocalDateTable_5d6ec47a-e961-45ef-83bb-5c1471fa2854
+ref table dim_profit_center
+ref table LocalDateTable_c9583c96-dea5-4c5e-aca4-10d66c0aab23
+ref table LocalDateTable_a1da6ab7-94a0-4f3f-a828-64f5569de3a4
+ref table LocalDateTable_1a75685f-5dc1-455f-ba06-d98b34ccb276
+ref table LocalDateTable_0f10f968-d929-4b0b-ae78-e2defbb08c7b
+ref table dim_provider_contract
+ref table LocalDateTable_495c4f1d-8496-4ed9-883c-cfb3d9390d0b
+ref table LocalDateTable_39b6e88e-638a-4b85-ae1b-5ace46db7c63
+ref table LocalDateTable_0d4335f8-3c7c-4f9e-816b-3df4562b2523
+ref table LocalDateTable_395317e7-3824-4cb0-a1ef-fa6ed0368b1b
+ref table LocalDateTable_139c2b76-3685-4d7a-9407-bf0cb7c858b5
+ref table LocalDateTable_e18ce8db-4b4d-4983-9928-a9c32fb30dcf
+ref table LocalDateTable_2a0a7982-642d-45d7-b5ba-67efa70ba13d
+ref table fact_shipment_pin
+ref table LocalDateTable_ee68fc67-a463-48c9-a679-e3863a723c9a
+ref table LocalDateTable_86a8d0f0-4192-4006-a527-30a4496bc1b0
+ref table LocalDateTable_62eb311a-5662-4b66-9559-d30e9c2eab50
+ref table LocalDateTable_6b72c3f8-f32c-4077-babc-d3135b771ac4
+
+ref cultureInfo en-US
+

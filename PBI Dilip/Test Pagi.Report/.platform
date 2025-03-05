@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Test Pagi"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "12baa512-232e-bd0b-4e00-55be189b87b9"
+  }
+}

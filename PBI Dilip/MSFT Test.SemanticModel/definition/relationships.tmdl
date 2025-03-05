@@ -1,0 +1,280 @@
+relationship 7976436a-f79a-4abf-8073-e88bdff34d1b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_client.record_strt_dat
+	toColumn: LocalDateTable_b91cc4bf-b067-4e54-b912-adccc1047250.Date
+
+relationship f8754a46-c03b-4cf6-aeab-9f78f04b0065
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_client.record_end_dat
+	toColumn: LocalDateTable_2d0e371f-2e87-489f-a6f0-e6e3f7e6214c.Date
+
+relationship 50fab955-1422-4fb4-9efd-5eea50def30b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_client.created_timestamp
+	toColumn: LocalDateTable_b7c5ebc9-b5c8-47a5-aa7e-33ee62e08c6b.Date
+
+relationship 751319e4-da1c-4838-a839-faf2a471fafe
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_client.updated_timestamp
+	toColumn: LocalDateTable_ff63dfa6-a24d-4cc0-b180-1d0729d26834.Date
+
+relationship 4bf89eca-23a2-427a-940d-75da08c6301c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date.dat_key
+	toColumn: LocalDateTable_91143ebc-44bf-484b-b458-f4fe46248de2.Date
+
+relationship b2f31a3f-841e-4991-a5fa-09323e55bc70
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date.prior_yr_dat
+	toColumn: LocalDateTable_57409097-13cd-4f22-8d67-205926785a6c.Date
+
+relationship f80e16ef-4257-4e72-a49b-b619ccbd2716
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date.cal_wk_begin_dat
+	toColumn: LocalDateTable_99957c79-57e8-4bd3-abdd-32f4e61a72d9.Date
+
+relationship a9d032b5-8675-4c8d-bc28-b0258f694def
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date.cal_mnth_begin_dat
+	toColumn: LocalDateTable_8990bd39-0d7d-47b5-892e-a2aefb941fc8.Date
+
+relationship fd954741-72e9-46b8-8638-46b110963300
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date.cal_qtr_begin_dat
+	toColumn: LocalDateTable_308a894d-b554-46aa-8149-2b880d55ec3d.Date
+
+relationship 7720ee16-d31b-4643-86b5-a5d917e77f60
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date.cal_yr_begin_dat
+	toColumn: LocalDateTable_54d1a30f-4539-4087-a221-e871fff65cf8.Date
+
+relationship 08d00052-c72e-4306-bfe4-f00c9690ff98
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date.cal_yr_end_dat
+	toColumn: LocalDateTable_9d1afa70-be6e-4244-88e1-7196af75cc80.Date
+
+relationship 8db89c78-22bf-454d-938b-d61bc9768a9e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date.fisc_wk_begin_dat
+	toColumn: LocalDateTable_344358ef-73d3-4629-a85c-ea580cc140f7.Date
+
+relationship bc5fedea-3cc0-4cc8-9020-0456f5bee868
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date.fisc_qtr_begin_dat
+	toColumn: LocalDateTable_e4dccb2d-0eca-4f80-ac80-676e7d0489b5.Date
+
+relationship 8006aa7c-aa01-455c-8c55-27914f6e9147
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date.fisc_mnth_begin_dat
+	toColumn: LocalDateTable_8cf6395c-1d5c-4b9c-a255-fd02c434c1c1.Date
+
+relationship 0541ec65-edbf-46d8-8350-c5bbc4073673
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date.fisc_mnth_end_dat
+	toColumn: LocalDateTable_fffd2401-7626-47a0-9618-9f3308643062.Date
+
+relationship a6260e3b-8826-4aca-a0d1-4b6785d08fee
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date.fisc_yr_begin_dat
+	toColumn: LocalDateTable_96348bdb-c1d3-4629-a1ea-3bbd07d9edb8.Date
+
+relationship 6eb3e29a-f7bb-4e8c-8d3e-f4fe71b3ecfc
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date.fisc_yr_end_dat
+	toColumn: LocalDateTable_83dbe08a-5f43-4044-a742-4f57c3a919cf.Date
+
+relationship 1de926b7-f3bc-4e01-81e0-9427fb322727
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date.prior_cal_yr_begin_dat
+	toColumn: LocalDateTable_c9ea85bf-3222-4fe1-b1d4-ce4b20ac90f7.Date
+
+relationship 469b4a9f-12b7-48b1-b1fe-dadfd1480961
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date.prior_cal_yr_end_dat
+	toColumn: LocalDateTable_fe64c11d-093a-4deb-8a85-a4a713ddfc5f.Date
+
+relationship 3ff45828-394b-41c9-9da3-4d29bb68a41b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date.prior_fisc_yr_begin_dat
+	toColumn: LocalDateTable_128b42f4-dad4-4e9f-8d90-c447937244c6.Date
+
+relationship 8a001aac-1f5e-4ce2-913b-14dd93ccfa1b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date.prior_fisc_yr_end_dat
+	toColumn: LocalDateTable_81971cb0-6a7d-4ac1-82e3-99016438d88c.Date
+
+relationship f2cff213-f374-4232-90da-560be8607be3
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date.created_timestamp
+	toColumn: LocalDateTable_73462196-7980-4f34-98ba-4b3c7ebeddf8.Date
+
+relationship 4a2cbfa0-b24d-47f6-ad02-196e7c6ba876
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date.updated_timestamp
+	toColumn: LocalDateTable_b5354ece-19ca-444c-856d-13d8e99c02f7.Date
+
+relationship c020f78c-42f2-4160-94fe-6057300ace92
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_line_of_business.created_timestamp
+	toColumn: LocalDateTable_1fa57d5c-cc26-42a2-99e2-5951c7b4e4f3.Date
+
+relationship feb59775-d1fa-4b1e-b39c-959382d80e42
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_line_of_business.updated_timestamp
+	toColumn: LocalDateTable_f6cff83c-204a-430d-82be-a5b8c91be53e.Date
+
+relationship 3c4e54f1-0893-4b0d-96a4-e5395fe9306a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_master_client.record_strt_dat
+	toColumn: LocalDateTable_e5b6fe48-54c1-4693-be77-e865d8733c34.Date
+
+relationship f77e9914-0f23-4361-b6fe-3faded86e4f5
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_master_client.record_end_dat
+	toColumn: LocalDateTable_8d5454f1-cb1b-4d39-981a-41dc9dc3c442.Date
+
+relationship 9e388ca1-931b-4d58-8ad0-954816d87c3f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_master_client.created_timestamp
+	toColumn: LocalDateTable_b6444cdf-6f2b-4225-b3cc-4eda089833d3.Date
+
+relationship dfce14b4-4256-467f-a3e4-db57b203f5cc
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_master_client.updated_timestamp
+	toColumn: LocalDateTable_5d6ec47a-e961-45ef-83bb-5c1471fa2854.Date
+
+relationship bbdceef7-e13c-44a3-bda2-fccd8375f5ae
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_profit_center.record_strt_dat
+	toColumn: LocalDateTable_c9583c96-dea5-4c5e-aca4-10d66c0aab23.Date
+
+relationship a454ba27-7aed-4c4a-a58c-066469733ea5
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_profit_center.record_end_dat
+	toColumn: LocalDateTable_a1da6ab7-94a0-4f3f-a828-64f5569de3a4.Date
+
+relationship a601857b-69a7-49c2-a744-361a689b9c9a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_profit_center.created_timestamp
+	toColumn: LocalDateTable_1a75685f-5dc1-455f-ba06-d98b34ccb276.Date
+
+relationship c1604840-2c2d-4085-b55a-06d4d1f08c2d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_profit_center.updated_timestamp
+	toColumn: LocalDateTable_0f10f968-d929-4b0b-ae78-e2defbb08c7b.Date
+
+relationship a3e68d62-7340-4c43-b7c0-a39da428087f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_provider_contract.cont_strt_date
+	toColumn: LocalDateTable_495c4f1d-8496-4ed9-883c-cfb3d9390d0b.Date
+
+relationship 1d8422cf-2395-48fc-93f5-10e36e83ece3
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_provider_contract.cont_end_date
+	toColumn: LocalDateTable_39b6e88e-638a-4b85-ae1b-5ace46db7c63.Date
+
+relationship 29c873d6-a34c-4ceb-8cb1-55e71f9fc013
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_provider_contract.renewal_date
+	toColumn: LocalDateTable_0d4335f8-3c7c-4f9e-816b-3df4562b2523.Date
+
+relationship 1790db34-b43a-4025-9532-ccb82e2f95f0
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_provider_contract.record_strt_dat
+	toColumn: LocalDateTable_395317e7-3824-4cb0-a1ef-fa6ed0368b1b.Date
+
+relationship 520eb522-90cb-427e-abcc-893d6a7d214f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_provider_contract.record_end_dat
+	toColumn: LocalDateTable_139c2b76-3685-4d7a-9407-bf0cb7c858b5.Date
+
+relationship 06f82700-9a18-4e29-9e1a-6cc842ba2274
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_provider_contract.created_timestamp
+	toColumn: LocalDateTable_e18ce8db-4b4d-4983-9928-a9c32fb30dcf.Date
+
+relationship 9fc121d1-ede6-4a39-a105-34a2c5347497
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_provider_contract.updated_timestamp
+	toColumn: LocalDateTable_2a0a7982-642d-45d7-b5ba-67efa70ba13d.Date
+
+relationship e5acf0b9-ace2-4f1c-9868-6fb72e4f8963
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fact_shipment_pin.inv_postg_dat
+	toColumn: LocalDateTable_ee68fc67-a463-48c9-a679-e3863a723c9a.Date
+
+relationship b845641b-57a0-4cab-83b5-25c5fc7330a3
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fact_shipment_pin.last_pymt_dat
+	toColumn: LocalDateTable_86a8d0f0-4192-4006-a527-30a4496bc1b0.Date
+
+relationship e5b0d83b-5641-4d40-a894-1d2435431d53
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fact_shipment_pin.created_timestamp
+	toColumn: LocalDateTable_62eb311a-5662-4b66-9559-d30e9c2eab50.Date
+
+relationship 01b6f078-916b-47ed-963a-4ae28fa63ee4
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fact_shipment_pin.modified_timestamp
+	toColumn: LocalDateTable_6b72c3f8-f32c-4077-babc-d3135b771ac4.Date
+
+relationship 9850740d-fb05-4ced-9bd6-a3abbcc19071
+	fromColumn: fact_shipment_pin.client_key
+	toColumn: dim_client.client_key
+
+	annotation PBI_IsFromSource = FS
+
+relationship 032f6ec1-f78b-46bb-a0b5-d96b73b72325
+	fromColumn: fact_shipment_pin.billed_dat
+	toColumn: dim_date.dat_key
+
+	annotation PBI_IsFromSource = FS
+
+relationship 1c4aac75-fa41-4c56-b404-a0afba305f6e
+	isActive: false
+	fromColumn: fact_shipment_pin.inv_dat
+	toColumn: dim_date.dat_key
+
+	annotation PBI_IsFromSource = FS
+
+relationship 3e16656c-02b0-4f53-801e-cdd4816db0dd
+	isActive: false
+	fromColumn: fact_shipment_pin.net_due_dat
+	toColumn: dim_date.dat_key
+
+	annotation PBI_IsFromSource = FS
+
+relationship 0f53077f-335a-43b9-b47d-05ff37b775b2
+	isActive: false
+	fromColumn: fact_shipment_pin.shpmt_dat
+	toColumn: dim_date.dat_key
+
+	annotation PBI_IsFromSource = FS
+
+relationship 6a2ea193-3088-4c6b-be14-7a003d7abea2
+	isActive: false
+	fromColumn: fact_shipment_pin.consmn_dat
+	toColumn: dim_date.dat_key
+
+	annotation PBI_IsFromSource = FS
+
+relationship 89fe39c8-8752-483d-bacb-2373fbd46399
+	fromColumn: fact_shipment_pin.line_of_bus_key
+	toColumn: dim_line_of_business.line_of_bus_key
+
+	annotation PBI_IsFromSource = FS
+
+relationship 94c4ce03-1173-4e4d-8f00-31f84de5dcc3
+	fromColumn: fact_shipment_pin.master_client_key
+	toColumn: dim_master_client.master_client_key
+
+	annotation PBI_IsFromSource = FS
+
+relationship 72d5df1a-ce03-ed0e-827e-8a61217f0f2e
+	fromColumn: fact_shipment_pin.provider_cont_key
+	toColumn: dim_provider_contract.provider_cont_key
+
+relationship b314059e-01bb-3cf2-4c94-086e4952afeb
+	fromColumn: fact_shipment_pin.profit_cntr_key
+	toColumn: dim_profit_center.profit_cntr_key
+

@@ -1,0 +1,12 @@
+expression Server = "analytics-stg-wg.782783949364.us-east-1.redshift-serverless.amazonaws.com:5439" meta [IsParameterQuery=true, List={"analytics-stg-wg.782783949364.us-east-1.redshift-serverless.amazonaws.com:5439"}, DefaultValue="analytics-stg-wg.782783949364.us-east-1.redshift-serverless.amazonaws.com:5439", Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 63b68e8f-9bec-45bb-8cfe-68138aae0a9d
+
+	annotation PBI_ResultType = Text
+
+expression Database = "analytics_temp" meta [IsParameterQuery=true, List={"analytics_temp"}, DefaultValue="analytics_temp", Type="Text", IsParameterQueryRequired=true]
+	lineageTag: f4bd5b1c-71b7-4468-accf-ec940582a7ac
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+

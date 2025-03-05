@@ -1,0 +1,384 @@
+table dim_provider_contract
+	lineageTag: 0b7bfbd9-7dfe-40d2-a5f7-1cbf3c40d465
+
+	column provider_cont_key
+		dataType: int64
+		formatString: 0
+		lineageTag: 525873a1-2df0-4036-9a5f-d4783f22948b
+		summarizeBy: none
+		sourceColumn: provider_cont_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column cont_id
+		dataType: string
+		lineageTag: c915717d-b6a3-46dc-af19-e19b75983c7c
+		summarizeBy: none
+		sourceColumn: cont_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column cont_itm_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 3f776269-211b-4f55-bd98-2535310e2351
+		summarizeBy: sum
+		sourceColumn: cont_itm_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column cont_itm_txt
+		dataType: string
+		lineageTag: 58469ecd-0097-483d-bb4e-bb6934c8ff63
+		summarizeBy: none
+		sourceColumn: cont_itm_txt
+
+		annotation SummarizationSetBy = Automatic
+
+	column cont_strt_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 5dc3ac07-6402-434c-b3c4-c91606e8dfb3
+		summarizeBy: none
+		sourceColumn: cont_strt_date
+
+		variation Variation
+			isDefault
+			relationship: a3e68d62-7340-4c43-b7c0-a39da428087f
+			defaultHierarchy: LocalDateTable_495c4f1d-8496-4ed9-883c-cfb3d9390d0b.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column cont_end_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 8541cf64-deaa-4fa7-81d4-4eeee868c4a7
+		summarizeBy: none
+		sourceColumn: cont_end_date
+
+		variation Variation
+			isDefault
+			relationship: 1d8422cf-2395-48fc-93f5-10e36e83ece3
+			defaultHierarchy: LocalDateTable_39b6e88e-638a-4b85-ae1b-5ace46db7c63.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column cont_acct_num
+		dataType: string
+		lineageTag: 8e88a835-0f55-4db8-ac55-de61da67d749
+		summarizeBy: none
+		sourceColumn: cont_acct_num
+
+		annotation SummarizationSetBy = Automatic
+
+	column bp_num
+		dataType: string
+		lineageTag: ec089af9-6cd1-421d-a8e6-d39a0b4883ca
+		summarizeBy: none
+		sourceColumn: bp_num
+
+		annotation SummarizationSetBy = Automatic
+
+	column acct_id
+		dataType: string
+		lineageTag: c3fb7638-def7-4ff9-876b-312652d7acfe
+		summarizeBy: none
+		sourceColumn: acct_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column acct_nam
+		dataType: string
+		lineageTag: 01e91748-c096-4db1-8986-cd7c006c44de
+		summarizeBy: none
+		sourceColumn: acct_nam
+
+		annotation SummarizationSetBy = Automatic
+
+	column retail_store_id
+		dataType: string
+		lineageTag: 9afa1f70-0690-4bea-b326-62d12fd692cb
+		summarizeBy: none
+		sourceColumn: retail_store_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column renewal_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: bcce7fa0-badd-4c1a-9378-5645e37db39e
+		summarizeBy: none
+		sourceColumn: renewal_date
+
+		variation Variation
+			isDefault
+			relationship: 29c873d6-a34c-4ceb-8cb1-55e71f9fc013
+			defaultHierarchy: LocalDateTable_0d4335f8-3c7c-4f9e-816b-3df4562b2523.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column pricing_type
+		dataType: string
+		lineageTag: 519e791c-30d9-4148-99be-ff203ce89da1
+		summarizeBy: none
+		sourceColumn: pricing_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column cub_factor_air
+		dataType: double
+		lineageTag: dda912a3-dd89-4f41-bf73-2aa29d997048
+		summarizeBy: sum
+		sourceColumn: cub_factor_air
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column cub_factor_ground
+		dataType: double
+		lineageTag: 599d8024-c229-49c1-bf4e-675927f217f4
+		summarizeBy: sum
+		sourceColumn: cub_factor_ground
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column liability_ovrd_value
+		dataType: double
+		lineageTag: c451a256-9883-4ef8-89fa-a000211f9e6d
+		summarizeBy: sum
+		sourceColumn: liability_ovrd_value
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column stop_shpmt_ind
+		dataType: string
+		lineageTag: 370ca0d2-38a3-4ae6-af72-13f29ede8568
+		summarizeBy: none
+		sourceColumn: stop_shpmt_ind
+
+		annotation SummarizationSetBy = Automatic
+
+	column rating_ref_mod
+		dataType: string
+		lineageTag: 5461b60a-85c6-42c4-abd7-3cf8416a423a
+		summarizeBy: none
+		sourceColumn: rating_ref_mod
+
+		annotation SummarizationSetBy = Automatic
+
+	column provider_cont_street
+		dataType: string
+		lineageTag: dd5d2f95-c4e0-4f87-b0b8-6e76b241ed8f
+		summarizeBy: none
+		sourceColumn: provider_cont_street
+
+		annotation SummarizationSetBy = Automatic
+
+	column provider_cont_house_number
+		dataType: string
+		lineageTag: 9f0ae71f-ed3a-452e-8cf3-1fbad59eb390
+		summarizeBy: none
+		sourceColumn: provider_cont_house_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column provider_cont_post_cd
+		dataType: string
+		lineageTag: 3f415061-5531-4962-8ec8-7c4896a80e41
+		summarizeBy: none
+		sourceColumn: provider_cont_post_cd
+
+		annotation SummarizationSetBy = Automatic
+
+	column provider_cont_region
+		dataType: string
+		lineageTag: 1fb29e9c-92bf-4454-9400-2031fb47704a
+		summarizeBy: none
+		sourceColumn: provider_cont_region
+
+		annotation SummarizationSetBy = Automatic
+
+	column provider_cont_city
+		dataType: string
+		lineageTag: 4bf321de-93af-4b45-8d43-9e50e6779ea4
+		summarizeBy: none
+		sourceColumn: provider_cont_city
+
+		annotation SummarizationSetBy = Automatic
+
+	column provider_cont_country
+		dataType: string
+		lineageTag: 9cf9d2a0-a184-4c7a-b4a9-4c74ae2cdf15
+		summarizeBy: none
+		sourceColumn: provider_cont_country
+
+		annotation SummarizationSetBy = Automatic
+
+	column provider_cont_telephone
+		dataType: string
+		lineageTag: a0103437-216f-4686-8700-6ea9ac9f8690
+		summarizeBy: none
+		sourceColumn: provider_cont_telephone
+
+		annotation SummarizationSetBy = Automatic
+
+	column retail_province
+		dataType: string
+		lineageTag: 508ec28d-ee8e-4937-a509-db50434ce400
+		summarizeBy: none
+		sourceColumn: retail_province
+
+		annotation SummarizationSetBy = Automatic
+
+	column retail_division
+		dataType: string
+		lineageTag: 1a51c2da-53f2-4660-acae-5c40ac68dc48
+		summarizeBy: none
+		sourceColumn: retail_division
+
+		annotation SummarizationSetBy = Automatic
+
+	column retail_region
+		dataType: string
+		lineageTag: b56d8cea-5354-46b5-9fbf-4499fb69ba53
+		summarizeBy: none
+		sourceColumn: retail_region
+
+		annotation SummarizationSetBy = Automatic
+
+	column retail_cost_cntr
+		dataType: string
+		lineageTag: da6a4dff-fab4-4ab9-8e72-8e1d65449ca0
+		summarizeBy: none
+		sourceColumn: retail_cost_cntr
+
+		annotation SummarizationSetBy = Automatic
+
+	column retail_cost_cntr_desc
+		dataType: string
+		lineageTag: 53bd666f-c1c5-46f2-8f72-420fb09f504f
+		summarizeBy: none
+		sourceColumn: retail_cost_cntr_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column record_strt_dat
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: df6e2a1f-9e17-41a4-88cb-b1db08f53ff6
+		summarizeBy: none
+		sourceColumn: record_strt_dat
+
+		variation Variation
+			isDefault
+			relationship: 1790db34-b43a-4025-9532-ccb82e2f95f0
+			defaultHierarchy: LocalDateTable_395317e7-3824-4cb0-a1ef-fa6ed0368b1b.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column record_end_dat
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: ffd2b67f-b1cc-49c2-aafe-019bb8c3da19
+		summarizeBy: none
+		sourceColumn: record_end_dat
+
+		variation Variation
+			isDefault
+			relationship: 520eb522-90cb-427e-abcc-893d6a7d214f
+			defaultHierarchy: LocalDateTable_139c2b76-3685-4d7a-9407-bf0cb7c858b5.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column active_record_ind
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 742bd1d5-2392-471d-a733-cab5b785d67b
+		summarizeBy: none
+		sourceColumn: active_record_ind
+
+		annotation SummarizationSetBy = Automatic
+
+	column validated
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 763b4228-5605-487b-b13d-d7f83bdf4b60
+		summarizeBy: none
+		sourceColumn: validated
+
+		annotation SummarizationSetBy = Automatic
+
+	column created_timestamp
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: f2ba479b-7929-465f-a37e-a4c8288419e9
+		summarizeBy: none
+		sourceColumn: created_timestamp
+
+		variation Variation
+			isDefault
+			relationship: 06f82700-9a18-4e29-9e1a-6cc842ba2274
+			defaultHierarchy: LocalDateTable_e18ce8db-4b4d-4983-9928-a9c32fb30dcf.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column updated_timestamp
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 054c84e5-8aec-4c2e-a2fa-a53cc6520626
+		summarizeBy: none
+		sourceColumn: updated_timestamp
+
+		variation Variation
+			isDefault
+			relationship: 9fc121d1-ede6-4a39-a105-34a2c5347497
+			defaultHierarchy: LocalDateTable_2a0a7982-642d-45d7-b5ba-67efa70ba13d.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column load_key
+		dataType: string
+		lineageTag: dae3ae06-e39f-4bae-aa50-6652585798f4
+		summarizeBy: none
+		sourceColumn: load_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column retail_classification
+		dataType: string
+		lineageTag: 079599b1-c284-4e61-bb1e-89b2bb580e84
+		summarizeBy: none
+		sourceColumn: retail_classification
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_provider_contract = m
+		mode: import
+		source =
+				let
+				    Source = AmazonRedshift.Database(Server,Database),
+				    reporting = Source{[Name="reporting"]}[Data],
+				    dim_provider_contract1 = reporting{[Name="dim_provider_contract"]}[Data],
+				    #"Kept First Rows" = Table.FirstN(dim_provider_contract1,100)
+				in
+				    #"Kept First Rows"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

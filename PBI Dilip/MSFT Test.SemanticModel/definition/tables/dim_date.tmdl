@@ -1,0 +1,528 @@
+table dim_date
+	lineageTag: debbc916-d948-4938-8725-220ffb425ac7
+
+	column dat_key
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: c01de7e6-3143-4cd3-88e0-60c6ef130a84
+		summarizeBy: none
+		sourceColumn: dat_key
+
+		variation Variation
+			isDefault
+			relationship: 4bf89eca-23a2-427a-940d-75da08c6301c
+			defaultHierarchy: LocalDateTable_91143ebc-44bf-484b-b458-f4fe46248de2.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column prior_yr_dat
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 3661df60-054c-496a-9733-ba88ea23a6ce
+		summarizeBy: none
+		sourceColumn: prior_yr_dat
+
+		variation Variation
+			isDefault
+			relationship: b2f31a3f-841e-4991-a5fa-09323e55bc70
+			defaultHierarchy: LocalDateTable_57409097-13cd-4f22-8d67-205926785a6c.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column full_dat_desc
+		dataType: string
+		lineageTag: ad73f182-4352-473f-9790-1e569d80333c
+		summarizeBy: none
+		sourceColumn: full_dat_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column cal_day
+		dataType: int64
+		formatString: 0
+		lineageTag: abba5d9c-bb85-4286-b41f-c6e23d846b42
+		summarizeBy: sum
+		sourceColumn: cal_day
+
+		annotation SummarizationSetBy = Automatic
+
+	column day_of_wk
+		dataType: int64
+		formatString: 0
+		lineageTag: a37f4ab5-1bb0-43f0-a772-1638c8805670
+		summarizeBy: sum
+		sourceColumn: day_of_wk
+
+		annotation SummarizationSetBy = Automatic
+
+	column cal_wk
+		dataType: int64
+		formatString: 0
+		lineageTag: e1233c07-f096-4267-aef6-1731b9392b15
+		summarizeBy: sum
+		sourceColumn: cal_wk
+
+		annotation SummarizationSetBy = Automatic
+
+	column cal_wk_begin_dat
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: c01d44ae-042a-4a06-ac4a-d396e9840629
+		summarizeBy: none
+		sourceColumn: cal_wk_begin_dat
+
+		variation Variation
+			isDefault
+			relationship: f80e16ef-4257-4e72-a49b-b619ccbd2716
+			defaultHierarchy: LocalDateTable_99957c79-57e8-4bd3-abdd-32f4e61a72d9.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column cal_mnth
+		dataType: int64
+		formatString: 0
+		lineageTag: fcc8e9dd-bd69-4f4c-8ec7-09c0802364c1
+		summarizeBy: sum
+		sourceColumn: cal_mnth
+
+		annotation SummarizationSetBy = Automatic
+
+	column cal_mnth_nam
+		dataType: string
+		lineageTag: f6e3b9c9-74cf-4c6b-a9db-5384229c7c50
+		summarizeBy: none
+		sourceColumn: cal_mnth_nam
+
+		annotation SummarizationSetBy = Automatic
+
+	column cal_mnth_begin_dat
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 48c4ef86-7d76-4926-b8d5-ee5f4bbb2f6f
+		summarizeBy: none
+		sourceColumn: cal_mnth_begin_dat
+
+		variation Variation
+			isDefault
+			relationship: a9d032b5-8675-4c8d-bc28-b0258f694def
+			defaultHierarchy: LocalDateTable_8990bd39-0d7d-47b5-892e-a2aefb941fc8.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column cal_qtr
+		dataType: int64
+		formatString: 0
+		lineageTag: 85027b1f-2447-4c16-b6a8-8e8b636375a2
+		summarizeBy: sum
+		sourceColumn: cal_qtr
+
+		annotation SummarizationSetBy = Automatic
+
+	column cal_qtr_begin_dat
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 609e5ec1-b946-4a89-b54d-5c3dbbd4b48c
+		summarizeBy: none
+		sourceColumn: cal_qtr_begin_dat
+
+		variation Variation
+			isDefault
+			relationship: fd954741-72e9-46b8-8638-46b110963300
+			defaultHierarchy: LocalDateTable_308a894d-b554-46aa-8149-2b880d55ec3d.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column cal_yr
+		dataType: int64
+		formatString: 0
+		lineageTag: f127c5bc-366a-4cdf-9c41-0c4f3dc9a649
+		summarizeBy: sum
+		sourceColumn: cal_yr
+
+		annotation SummarizationSetBy = Automatic
+
+	column cal_yr_begin_dat
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 9cbf8d9f-f3ae-454c-9fef-9a224161e2ae
+		summarizeBy: none
+		sourceColumn: cal_yr_begin_dat
+
+		variation Variation
+			isDefault
+			relationship: 7720ee16-d31b-4643-86b5-a5d917e77f60
+			defaultHierarchy: LocalDateTable_54d1a30f-4539-4087-a221-e871fff65cf8.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column cal_yr_end_dat
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 42e04854-b7fa-4180-8da6-964b02640691
+		summarizeBy: none
+		sourceColumn: cal_yr_end_dat
+
+		variation Variation
+			isDefault
+			relationship: 08d00052-c72e-4306-bfe4-f00c9690ff98
+			defaultHierarchy: LocalDateTable_9d1afa70-be6e-4244-88e1-7196af75cc80.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column hol_ind
+		dataType: string
+		lineageTag: f76dd577-5be5-4025-a2ea-ab3693d2c627
+		summarizeBy: none
+		sourceColumn: hol_ind
+
+		annotation SummarizationSetBy = Automatic
+
+	column work_day_ind
+		dataType: string
+		lineageTag: 1ffd1b83-6fbb-47ba-8f08-81dd0590296f
+		summarizeBy: none
+		sourceColumn: work_day_ind
+
+		annotation SummarizationSetBy = Automatic
+
+	column hol_nam
+		dataType: string
+		lineageTag: 214c7239-3216-447d-b2ac-9f3e78379149
+		summarizeBy: none
+		sourceColumn: hol_nam
+
+		annotation SummarizationSetBy = Automatic
+
+	column fisc_wk
+		dataType: int64
+		formatString: 0
+		lineageTag: 9124f4ff-bdb7-4099-b827-843423534299
+		summarizeBy: sum
+		sourceColumn: fisc_wk
+
+		annotation SummarizationSetBy = Automatic
+
+	column fisc_wk_begin_dat
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 79593495-5548-4abf-992b-12702de7041f
+		summarizeBy: none
+		sourceColumn: fisc_wk_begin_dat
+
+		variation Variation
+			isDefault
+			relationship: 8db89c78-22bf-454d-938b-d61bc9768a9e
+			defaultHierarchy: LocalDateTable_344358ef-73d3-4629-a85c-ea580cc140f7.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column fisc_qtr
+		dataType: int64
+		formatString: 0
+		lineageTag: f9b61eb1-e6dc-4f3a-a1a6-31dba22c87a2
+		summarizeBy: sum
+		sourceColumn: fisc_qtr
+
+		annotation SummarizationSetBy = Automatic
+
+	column fisc_qtr_begin_dat
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 350060e4-a063-4514-b40c-945c6669592e
+		summarizeBy: none
+		sourceColumn: fisc_qtr_begin_dat
+
+		variation Variation
+			isDefault
+			relationship: bc5fedea-3cc0-4cc8-9020-0456f5bee868
+			defaultHierarchy: LocalDateTable_e4dccb2d-0eca-4f80-ac80-676e7d0489b5.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column fisc_mnth
+		dataType: int64
+		formatString: 0
+		lineageTag: f7e578d6-5487-4035-b382-0645da4d6015
+		summarizeBy: sum
+		sourceColumn: fisc_mnth
+
+		annotation SummarizationSetBy = Automatic
+
+	column fisc_mnth_begin_dat
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: ba2e8be9-62ab-428b-8df7-4a9154ce27e8
+		summarizeBy: none
+		sourceColumn: fisc_mnth_begin_dat
+
+		variation Variation
+			isDefault
+			relationship: 8006aa7c-aa01-455c-8c55-27914f6e9147
+			defaultHierarchy: LocalDateTable_8cf6395c-1d5c-4b9c-a255-fd02c434c1c1.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column fisc_mnth_end_dat
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 971da682-dfe5-4ad0-a412-e88847b455db
+		summarizeBy: none
+		sourceColumn: fisc_mnth_end_dat
+
+		variation Variation
+			isDefault
+			relationship: 0541ec65-edbf-46d8-8350-c5bbc4073673
+			defaultHierarchy: LocalDateTable_fffd2401-7626-47a0-9618-9f3308643062.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column fisc_yr
+		dataType: int64
+		formatString: 0
+		lineageTag: cfbae4f9-837d-49d8-9d03-f3624fc506ed
+		summarizeBy: sum
+		sourceColumn: fisc_yr
+
+		annotation SummarizationSetBy = Automatic
+
+	column fisc_yr_begin_dat
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: c3979f57-cc32-42a0-9528-4922214feb31
+		summarizeBy: none
+		sourceColumn: fisc_yr_begin_dat
+
+		variation Variation
+			isDefault
+			relationship: a6260e3b-8826-4aca-a0d1-4b6785d08fee
+			defaultHierarchy: LocalDateTable_96348bdb-c1d3-4629-a1ea-3bbd07d9edb8.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column fisc_yr_end_dat
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 2722e1fc-293e-4edd-a423-c8e1a51cd583
+		summarizeBy: none
+		sourceColumn: fisc_yr_end_dat
+
+		variation Variation
+			isDefault
+			relationship: 6eb3e29a-f7bb-4e8c-8d3e-f4fe71b3ecfc
+			defaultHierarchy: LocalDateTable_83dbe08a-5f43-4044-a742-4f57c3a919cf.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column prior_cal_yr
+		dataType: int64
+		formatString: 0
+		lineageTag: 561800a7-2c4f-4977-9013-a2cb8545994e
+		summarizeBy: sum
+		sourceColumn: prior_cal_yr
+
+		annotation SummarizationSetBy = Automatic
+
+	column prior_cal_qtr
+		dataType: int64
+		formatString: 0
+		lineageTag: a106bbfc-a72e-4364-b203-f00dfa49c04a
+		summarizeBy: sum
+		sourceColumn: prior_cal_qtr
+
+		annotation SummarizationSetBy = Automatic
+
+	column prior_cal_mnth
+		dataType: int64
+		formatString: 0
+		lineageTag: 42ad0be0-a152-4abc-8e7a-ec14888609e3
+		summarizeBy: sum
+		sourceColumn: prior_cal_mnth
+
+		annotation SummarizationSetBy = Automatic
+
+	column prior_cal_wk
+		dataType: int64
+		formatString: 0
+		lineageTag: fc9bcd0f-f323-4fca-bf56-c5c503ab6667
+		summarizeBy: sum
+		sourceColumn: prior_cal_wk
+
+		annotation SummarizationSetBy = Automatic
+
+	column prior_cal_yr_begin_dat
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 8bdef14f-3dc4-4f6c-8ed5-c0d67da91151
+		summarizeBy: none
+		sourceColumn: prior_cal_yr_begin_dat
+
+		variation Variation
+			isDefault
+			relationship: 1de926b7-f3bc-4e01-81e0-9427fb322727
+			defaultHierarchy: LocalDateTable_c9ea85bf-3222-4fe1-b1d4-ce4b20ac90f7.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column prior_cal_yr_end_dat
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 6fd0d7a2-258d-4e1a-bd5a-7eaab764036c
+		summarizeBy: none
+		sourceColumn: prior_cal_yr_end_dat
+
+		variation Variation
+			isDefault
+			relationship: 469b4a9f-12b7-48b1-b1fe-dadfd1480961
+			defaultHierarchy: LocalDateTable_fe64c11d-093a-4deb-8a85-a4a713ddfc5f.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column prior_fisc_yr
+		dataType: int64
+		formatString: 0
+		lineageTag: 9515f8b0-a18e-49cf-9d71-7af14cf677f9
+		summarizeBy: sum
+		sourceColumn: prior_fisc_yr
+
+		annotation SummarizationSetBy = Automatic
+
+	column prior_fisc_qtr
+		dataType: int64
+		formatString: 0
+		lineageTag: e4f2e438-9064-487f-abd7-39cebde6eff0
+		summarizeBy: sum
+		sourceColumn: prior_fisc_qtr
+
+		annotation SummarizationSetBy = Automatic
+
+	column prior_fisc_mnth
+		dataType: int64
+		formatString: 0
+		lineageTag: 4ecf987d-cc12-4ec7-a1bc-7c5ef2a1ef7d
+		summarizeBy: sum
+		sourceColumn: prior_fisc_mnth
+
+		annotation SummarizationSetBy = Automatic
+
+	column prior_fisc_wk
+		dataType: int64
+		formatString: 0
+		lineageTag: b2af7531-89bc-477d-ab2c-214248dc7f92
+		summarizeBy: sum
+		sourceColumn: prior_fisc_wk
+
+		annotation SummarizationSetBy = Automatic
+
+	column prior_fisc_yr_begin_dat
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 8d0e6cd5-402e-47fd-8a89-e3a8fc798285
+		summarizeBy: none
+		sourceColumn: prior_fisc_yr_begin_dat
+
+		variation Variation
+			isDefault
+			relationship: 3ff45828-394b-41c9-9da3-4d29bb68a41b
+			defaultHierarchy: LocalDateTable_128b42f4-dad4-4e9f-8d90-c447937244c6.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column prior_fisc_yr_end_dat
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 22c485f0-dd56-497b-9f5a-a3f4a6501f91
+		summarizeBy: none
+		sourceColumn: prior_fisc_yr_end_dat
+
+		variation Variation
+			isDefault
+			relationship: 8a001aac-1f5e-4ce2-913b-14dd93ccfa1b
+			defaultHierarchy: LocalDateTable_81971cb0-6a7d-4ac1-82e3-99016438d88c.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column created_timestamp
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: b4e09da1-8b36-46a4-a374-08c73e8fb076
+		summarizeBy: none
+		sourceColumn: created_timestamp
+
+		variation Variation
+			isDefault
+			relationship: f2cff213-f374-4232-90da-560be8607be3
+			defaultHierarchy: LocalDateTable_73462196-7980-4f34-98ba-4b3c7ebeddf8.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column updated_timestamp
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: fdba5eb9-981b-4210-bdb3-512bddb3c687
+		summarizeBy: none
+		sourceColumn: updated_timestamp
+
+		variation Variation
+			isDefault
+			relationship: 4a2cbfa0-b24d-47f6-ad02-196e7c6ba876
+			defaultHierarchy: LocalDateTable_b5354ece-19ca-444c-856d-13d8e99c02f7.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column load_key
+		dataType: string
+		lineageTag: 28ca30a8-972d-4194-995b-f47de612ed5a
+		summarizeBy: none
+		sourceColumn: load_key
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_date = m
+		mode: import
+		source =
+				let
+				    Source = AmazonRedshift.Database(Server,Database),
+				    reporting = Source{[Name="reporting"]}[Data],
+				    dim_date1 = reporting{[Name="dim_date"]}[Data],
+				     #"Kept First Rows" = Table.FirstN(dim_date1,100)
+				in
+				    #"Kept First Rows"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Exception
+
